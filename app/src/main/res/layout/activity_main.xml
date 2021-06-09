@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#275b7b"
+    android:orientation="vertical"
+    tools:context="com.last.arnaud.rand.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="0.5"
+    android:layout_marginTop="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="180dp"
+        android:layout_height="169dp"
+        android:gravity="center"
+        android:background="@drawable/diceslogo"
+        android:textColor="#FFFFFFFF"
+        android:textSize="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/appui"
+        android:layout_width="237dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#FFFFFFFF"
+        android:textSize="15dp"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="0.3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/my_random_button"
+            android:text="Random"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/my_reset_button"
+            android:text="Reset"
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="256dp"
+            android:layout_height="39dp"
+            android:layout_below="@id/barre_value"
+            android:layout_centerHorizontal="true"
+            android:max="200"
+            android:progress="100"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:splitTrack="false"
+            android:thumb="@drawable/custom_thumb" />
+
+        <TextView
+            android:id="@+id/barre_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="100"
+            android:textColor="#FFFFFFFF" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+    </LinearLayout>
